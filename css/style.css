@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height:150vh;
+    position: relative;
+}
+.nav-item a{
+    margin-right: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+.nav-item :hover{
+    color: rgb(201, 195, 195);
+    
+  
+}
+.navbar-nav{
+    align-items: center;
+}
+.btn{
+    
+background: rgb(235, 65, 65);
+    
+padding: 10px 27px;
+    
+border-radius: 30px;
+    
+color: #fff;
+font-weight: 800;
+}
+.btn:hover{
+    background: red;
+    color: #fff;
+   
+}
+.middle_banner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;}
+.middle_banner h6{
+
+font-size: 20px;
+
+font-weight: 600;
+}
+.middle_banner h1{
+    
+font-size: 75px;
+    
+font-weight: 600;
+}
+header i{
+    position: absolute;
+    top: 82%;
+    color: #fff;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    animation-name: icon_anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: all ease-in-out;
+    opacity: 1;
+}
+@keyframes icon_anim {
+    0%{
+        top:82%;
+        opacity: 0.1;
+        color: #fa1100;
+    
+    }
+    100%{
+        top:87%;
+        opacity: 1;
+    }
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1f3541+0,1f3541+99&0.6+0,0.6+100 */
+background: -moz-linear-gradient(top,  rgba(31,53,65,0.6) 0%, rgba(31,53,65,0.6) 99%, rgba(31,53,65,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(31,53,65,0.6) 0%,rgba(31,53,65,0.6) 99%,rgba(31,53,65,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(31,53,65,0.6) 0%,rgba(31,53,65,0.6) 99%,rgba(31,53,65,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#991f3541', endColorstr='#991f3541',GradientType=0 ); /* IE6-9 */
+}
+
+/* about us section starts from here */
+.about_us{
+
+padding: 100px 0px;
+
+text-align: center;
+
+background: #f9f8f8;
+}
+.about_us h6 {
+    
+font-size: 20px;
+    
+font-weight: 600;
+color: #fff;
+z-index: 2;
+}
+.about_us h3{
+    
+font-size: 37px;
+    
+font-weight: 700;
+}
+.about_us p{
+    
+color: #808285;
+    
+font-weight: 300;
+    
+font-size: 16px;
+    
+margin-top: 30px;
+    
+margin-bottom: 30px;
+}
+/* services section starts from here */
+.services{
+    background-image: url(../images/beach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 100px;
+    position: relative;
+   z-index: 1;
+}
+.services h1{
+    margin-bottom: 30px;
+   
+}
+
+.services p{
+    font-size: 15px;
+
+}
+.services span{
+
+display: block;
+
+height: 2px;
+
+background: #fff;
+
+margin: 30px 0px;
+}
+.services::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(27, 61, 82);
+    opacity: 0.5;
+    color: #fff;
+    z-index: -1;
+}
+
+/* projects section starts from here */
+.projects{
+    padding: 100px 0px;
+}
+.cols{
+   
+}
+.projects h5{
+
+font-weight: 600;
+}
+.projects h1{
+
+font-weight: 600;
+}
+.projects h3{
+    font-weight: 600;
+}
+.item{
+   position: relative;
+    
+}
+.item_img img:hover{
+    box-shadow: 10px 10px 8px rgb(174, 174, 180);
+    transition: 0.6s;
+    
+}
+.item p{
+   position:absolute;
+   
+  
+   transition: 0.5s all ease-in-out;
+   top:65%;
+   z-index: -1; 
+}
+.item:hover p{
+    top:100%;
+}
+.item h4{
+    font-weight: 600;   
+}
+.item p{
+font-weight: 200;}
+
+.svl_row{
+    padding-top: 200px;
+}
+/* footer section starts from here */
+footer{
+    background-color: #011627;
+    color: #fff;
+    padding-top: 100px;
+}
+footer h4{
+
+font-weight: 300;
+
+margin-bottom: 30px;
+}
+footer p{
+    font-weight: 300;
+    font-size: 16px;
+    margin: 30px 0px;
+}
+footer a{
+
+text-decoration: none;
+
+color: #fff;
+
+font-weight: 300;
+
+font-size: 15px;
+}
+footer a:hover{
+    color: tomato;
+    transition: 0.8s;
+}
+footer ul{
+    list-style: none;
+  
+   padding: 0;
+}
